@@ -43,6 +43,24 @@
         <input v-model="message">
     </div>
 
+   <div id="app-7">
+       <ol>
+           <todo-item
+            v-for="item in groceryList"
+            v-bind:todo="item"
+            v-bind:key="item.id"
+           ></todo-item>
+       </ol>
+   </div>
+
+   <div id="app-8">
+       <p>{{ foo }}</p>
+       <!--this will no longer update 'foo!'-->
+       <button v-on:click="foo = 'baz'">Change it</button>
+   </div>
+
+    
+
     <script src="script.js">
 
     </script>
