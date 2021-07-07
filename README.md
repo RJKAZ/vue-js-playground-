@@ -6,3 +6,4 @@ https://youtu.be/qZXt1Aom3Cs
 
 7/4/21 - Left off at 41:16 right before the creation of the Task.vue component
 7/5/21 - left off at 47.22
+7/7/21 - Left off at 56:37
