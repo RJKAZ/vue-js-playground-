@@ -1,7 +1,5 @@
 <template>
-      
-    <AddTask v-show="showAddTask"
-    @add-task="addTask" />
+    <AddTask v-show="showAddTask" @add-task="addTask" />
   
   <Tasks 
     @toggle-reminder="toggleReminder" 
@@ -24,10 +22,11 @@ export default {
         AddTask
     },
     data() {
+      return {
         tasks: [],
+      }
     },
     methods: {
-     
       async addTask(task) {
         const res = await fetch('api/tasks', {
           method: 'POST',
@@ -51,7 +50,7 @@ export default {
        
         }
       },
-      toggleReminder(id){
+      async toggleReminder(id){
         const taskToToggle = await this.fetchTask(id)
         const updTask = {...taskToToggle, reminder: !taskToToggle.reminder}
         

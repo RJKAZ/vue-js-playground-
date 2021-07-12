@@ -2,7 +2,7 @@
   <header>
     <h1>{{ title }}</h1>
     <Button 
-      v-show="HomePage" 
+      v-show="homePage" 
       @btn-click="$emit
       ('toggle-add-task')" 
       :text="showAddTask ? 'Close' : 'Add Task'"
