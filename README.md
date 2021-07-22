@@ -1,1 +1,3 @@
-7/8/21 - left off at 1:27:19
+To remove embedded Git repos created from the vue create function, manually move that folder into this main one, cd into the new folder, and 
+
+rm -rf .git
