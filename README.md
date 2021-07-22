@@ -1,3 +1,3 @@
-To remove embedded Git repos created from the vue create function, manually move that folder into this main one, cd into the new folder, and 
+When added project using vue create, be sure to add --no-git at the end to avoid creating new repos
 
-rm -rf .git
+vue create project-name --no-git
