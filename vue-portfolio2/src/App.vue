@@ -7,6 +7,7 @@
 <script>
 import Navigation from './components/includes/navigation.vue'
 
+
 export default {
   name: 'App',
   components: {
